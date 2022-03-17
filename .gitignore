@@ -1,0 +1,16 @@
+.ipynb_checkpoints/*
+*/__pycache__/*
+.DS_Store
+.idea/*
+data/*
+!data/imagen/samples.txt
+!data/imagen/samples_1.txt
+results/*
+localtest.py
+olderversion/*
+pretrained/*.pth.tar
+datasets
+pretrained
+results_backup
+test.py
+backup
