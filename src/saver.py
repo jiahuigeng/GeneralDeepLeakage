@@ -56,7 +56,7 @@ class Saver(object):
                 viz = np.vstack((imgs, empty_space))
         lbls = label.numpy()
         # file_name = 'start_%d_lbls_'%start_idx + '-'.join('%d' % lbl for lbl in lbls) + '%s'%method +'.png'
-        file_name = 'start_%d_lbls_' % start_idx + '-'.join([str(lbls[0], str(lbls[-1]))]) + '%s' % method + '.png'
+        file_name = 'start_%d_lbls_' % start_idx + '-'.join([str(lbls[0]), str(lbls[-1])]) + '%s' % method + '.png'
         skimage.io.imsave(osp.join(self.experiment_dir, file_name), viz)
 
     def save_metrics(self, id, gt_label, pred_label, label_acc, mse, ssim, psnr, lpips, method, lr, num_dummy, tv_alpha, l2_alpha, clip_alpha, scale_alpha):
