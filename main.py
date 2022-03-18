@@ -147,8 +147,8 @@ def main(args):
         total_label_pred = dict()
         total_image_restore = dict()
         attack_list = ["gdlg"] # "dlg", "gradinversion",
-        if bs > num_classes:
-            attack_list = ["dlg", "gdlg"]
+        # if bs > num_classes:
+        #     attack_list = ["dlg", "gdlg"]
         for method in attack_list:
             total_label_pred[method] = list()
             total_image_restore[method] = list()
