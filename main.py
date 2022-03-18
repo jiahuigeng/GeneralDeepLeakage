@@ -138,7 +138,7 @@ def main(args):
     dst, channel, num_classes, hidden = get_dataset(args)
     net = get_model(channel=channel, hidden=hidden, num_classes=num_classes, args=args)
 
-    num_exp = min(int(len(dst)/bs/2), args.num_exp)
+    num_exp = min(int(len(dst)/bs), args.num_exp)
     start_idx = 0
     index = get_index(args.dataset)
 
