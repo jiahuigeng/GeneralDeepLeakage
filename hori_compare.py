@@ -175,7 +175,7 @@ def main(args):
     for idx_net in range(num_exp):
         total_label_pred = dict()
         total_image_restore = dict()
-        attack_list = ["gdlg"] # "dlg", "gradinversion", "dlg", "cpl", "gs", "gradinversion",
+        attack_list = ["dlg", "cpl", "gs"] # "dlg", "gradinversion", "dlg", "cpl", "gs", "gradinversion",
         # if bs > num_classes:
         #     attack_list = ["dlg", "gdlg"]
         for method in attack_list:
